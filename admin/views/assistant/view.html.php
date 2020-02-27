@@ -5,7 +5,7 @@
  * @created    30th April, 2015
  * @author     Llewellyn van der Merwe <http://www.joomlacomponentbuilder.com>
  * @github     Joomla Component Builder <https://github.com/vdm-io/Joomla-Component-Builder>
- * @copyright  Copyright (C) 2015 - 2019 Vast Development Method. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Vast Development Method. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -596,9 +596,12 @@ class ComponentbuilderViewAssistant extends JViewLegacy
 
 		// always load these files.
 		$this->document->addStyleSheet(JURI::root(true) . "/media/com_componentbuilder/grapejs/css/grapes.min.css", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/css");
-		$this->document->addStyleSheet(JURI::root(true) . "/media/com_componentbuilder/grapejs/css/grapesjs-preset-webpage.min.css", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/css");
 		$this->document->addScript(JURI::root(true) . "/media/com_componentbuilder/grapejs/js/grapes.min.js", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/javascript");
-		$this->document->addScript(JURI::root(true) . "/media/com_componentbuilder/grapejs/js/grapesjs-preset-webpage.min.js", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/javascript");
+
+		// always load these files.
+		$this->document->addStyleSheet(JURI::root(true) . "/media/com_componentbuilder/grapejs-preset-webpage/css/grapesjs-preset-webpage.min.css", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/css");
+		$this->document->addScript(JURI::root(true) . "/media/com_componentbuilder/grapejs-preset-webpage/js/grapesjs-preset-webpage.min.js", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/javascript");
+		$this->document->addScript(JURI::root(true) . "/media/com_componentbuilder/grapejs-preset-webpage/js/filestack-0.1.10.js", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/javascript");
 
 		// Add View JavaScript File
 		$this->document->addScript(JURI::root(true) . "/administrator/components/com_componentbuilder/assets/js/assistant.js", (ComponentbuilderHelper::jVersion()->isCompatible("3.8.0")) ? array("version" => "auto") : "text/javascript");
@@ -773,7 +776,7 @@ class ComponentbuilderViewAssistant extends JViewLegacy
 			$title = JText::_('COM_COMPONENTBUILDER_ASSISTANT');
 		}
 		// add title to the page
-		JToolbarHelper::title($title,'heart');
+		JToolbarHelper::title($title,'heart-2');
 		// add the back button
 		// JToolBarHelper::custom('assistant.back', 'undo-2', '', 'COM_COMPONENTBUILDER_BACK', false);
 		// add cpanel button

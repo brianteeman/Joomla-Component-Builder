@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.2" method="upgrade">
 	<name>COM_COMPONENTBUILDER</name>
-	<creationDate>13th February, 2020</creationDate>
+	<creationDate>27th February, 2020</creationDate>
 	<author>Llewellyn van der Merwe</author>
 	<authorEmail>llewellyn@joomlacomponentbuilder.com</authorEmail>
 	<authorUrl>http://www.joomlacomponentbuilder.com</authorUrl>
-	<copyright>Copyright (C) 2015 - 2019 Vast Development Method. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2015 - 2020 Vast Development Method. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<version>2.10.11</version>
 	<description><![CDATA[
@@ -40,6 +40,7 @@ Whether you're a seasoned [Joomla](https://extensions.joomla.org/extension/compo
 		<folder>css</folder>
 		<folder>images</folder>
 		<folder>grapejs</folder>
+		<folder>grapejs-preset-webpage</folder>
 		<folder>uikit-v2</folder>
 		<folder>footable-v3</folder>
 	</media>
